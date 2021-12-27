@@ -37,3 +37,28 @@ header {
     height: 545px;
   }
 }
+
+.masvendidos{
+  h2{
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: black;
+  }
+  .masvendidosimg{
+    border: 1px solid #97c071;
+    height: 300px;
+  }
+  .col-4{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    }
+    p{
+      padding: 1rem;
+      font-size: 20px;
+      text-align: center;
+    }
+}
