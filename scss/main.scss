@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
    }
-   
+
    .col-auto{
     display: flex;
     float: right;
@@ -27,6 +27,13 @@ body {
     color: rgb(194, 186, 186);
     padding: 2rem;
     }
-
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .tote{
+    height: 545px;
+  }
+}

@@ -30,4 +30,13 @@ body {
   font-size: 17px;
   color: #c2baba;
   padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .tote {
+  height: 545px;
 }/*# sourceMappingURL=main.css.map */
