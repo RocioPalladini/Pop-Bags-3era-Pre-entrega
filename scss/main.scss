@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';font-size: 22px;
+}
+  .titulo{
+    font-size: 33px;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+   }
+   
+   .col-auto{
+    display: flex;
+    float: right;
+    padding: 2rem;
+}
+   .navbar {
+    background-color: #97c071;
+    margin: 2rem;
+    li{
+    font-size: 17px;
+    color: rgb(194, 186, 186);
+    padding: 2rem;
+    }
+
+}
+
