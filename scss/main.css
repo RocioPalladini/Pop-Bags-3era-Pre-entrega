@@ -121,4 +121,12 @@ section h3 {
 section p {
   margin-right: 6rem;
   margin-left: 6rem;
+}
+
+.local {
+  display: flex;
+  justify-content: center;
+}
+.local img {
+  height: 1100px;
 }/*# sourceMappingURL=main.css.map */
