@@ -129,4 +129,32 @@ section p {
 }
 .local img {
   height: 1100px;
+}
+
+.container-formulario {
+  padding: 4rem;
+}
+.container-formulario h3 {
+  text-align: center;
+}
+.container-formulario div label {
+  font-size: 18px;
+}
+.container-formulario div p {
+  font-size: 18px;
+}
+
+.enviar {
+  margin: 5px;
+}
+.enviar .botonformulario {
+  padding: 15px;
+  background-color: #f6fff5;
+  border-radius: 15px;
+  border: 2px solid black;
+  list-style: none;
+}
+
+textarea {
+  padding: 7px;
 }/*# sourceMappingURL=main.css.map */

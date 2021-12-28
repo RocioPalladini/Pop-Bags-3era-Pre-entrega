@@ -133,3 +133,33 @@ section{
     height: 1100px;
   }
 }
+
+.container-formulario{
+  padding: 4rem;
+  h3{
+    text-align: center;
+  }
+  div{
+    label{
+      font-size: 18px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+}
+
+.enviar{
+  margin: 5px;
+  .botonformulario{
+    padding: 15px;
+    background-color: rgb(246, 255, 245);
+    border-radius: 15px;
+    border: 2px solid black;
+    list-style: none;
+  }
+}
+
+textarea{
+  padding: 7px;
+}
