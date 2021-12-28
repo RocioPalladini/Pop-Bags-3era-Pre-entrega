@@ -35,7 +35,7 @@ header {
   justify-content: center;
   align-items: center;
   .tote{
-    height: 545px;
+    height: 530px;
   }
 }
 
@@ -83,4 +83,21 @@ header {
      text-decoration: none;
      color: black;
     }
+}
+
+footer{
+  padding: 2rem;
+  .icons{
+    margin: 3rem;
+  }
+  a{
+    text-decoration: none;
+  }
+  .footer-menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 18px;
+  }
+
 }
