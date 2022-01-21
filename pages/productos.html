@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- metas -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="nosnippet">
+  <meta name="keywords" content="tote bags, decoración, bolso, diseño bolsos, indumentaria">
+  <meta name="description"
+    content="Entra a nuestra web y mira los bolosos que tenemos disponibles">
+  <!-- links y scripts -->
+  <link rel="preload" href="../css/main.css as=" styles">
+  <link href="../scss/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/aos.css">
+  <link rel="stylesheet" href="../css/toastr.min.css">
+  <script src="https://kit.fontawesome.com/10fd8d61f9.js" crossorigin="anonymous"></script>
+  <!-- title -->
+  <title>Pop bags: Tienda de bolsas de lienzo</title>
+</head>
+
+<body>
+
+  <!-- Menu de navegación -->
+  <nav class="navbar">
+    <div id="main" class="content">
+      <div class="logo">
+        <a href="index.html">
+          <h1>Pop<span>Bags</span></h1>
+        </a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a id="inicio" href="../index.html">Inicio</a></li>
+        <li><a id="productos" href="./productos.html">Productos</a></li>
+        <li><a id="nuestroTrabajo" href="./nuestroTrabajo.html">Nuestro Trabajo</a></li>
+        <li><a id="contacto" href="./contacto.html">Contacto</a></li>
+        <li><a id="cuenta" href="./cuenta.html">Cuenta</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero -->
+  <div class="bg-img-cinco hero__secondary">
+    <h2 data-aos="fade-up" data-aos-duration="1000">¡Adquiri piezas unicas!</h2>
+    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="elemento">
+      <a href="#slide"><i class="fas fa-sort-down flecha animatedColor"></i></a>
+    </div>
+  </div>
+
+  <div id="slide"></div>
+
+  
+  <div class="carrito-compras container">
+    <h3 data-aos="fade-up" data-aos-duration="600">Nuestros Productos</h3>
+    <ul data-aos="fade-up" data-aos-duration="600">
+      <li class="submenu">
+        <i class="fas fa-shopping-cart"></i>
+        <div id="carrito">
+          <table id="lista-carrito">
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div class="botones__carrito">
+            <a href="#" class="button__tertiary-dark" id="vaciar-carrito">Vaciar Carrito</a>
+            <a href="#" class="button__tertiary-dark" id="terminar-compra">Terminar Compra</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Galeria -->
+  <section class="container galeria">
+    <div id="lista-cuadros" class="galeria__grid">
+
+      <article class="cuadro">
+        <img class="img" src="../img/cuadro1.jpg" alt="">
+        <div class="cuadro__info">
+          <h4>Ivy</h4>
+          <p>Medidas: 50x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1900</span><mark>$850</mark></p>
+          </div>
+          <a class="button__tertiary agregar-carrito" href="#" role="button" data-id="1">Agregar al carrito</a>
+        </div>
+      </article>
+
+      <article class="cuadro">
+        <img class="img" src="../img/cuadro2.jpg" alt="">
+        <div class="cuadro__info">
+          <h4>Spotify</h4>
+          <p>Medidas: 30x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1800</span><mark>$900</mark></p>
+          </div>
+          <a class="button__tertiary agregar-carrito" href="#" role="button" data-id="2">Agregar al carrito</a>
+        </div>
+      </article>
+
+      <article class="cuadro">
+        <img class="img" src="../img/cuadro3.jpg" alt="Cuadro escarabajo">
+        <div class="cuadro__info">
+          <h4>Folklore</h4>
+          <p>Medidas: 30x30 cm</p>
+          <img src="../img/estrellas.png">
+          <div class="precio">
+            <p class="precio__desc"><span>$1000</span><mark>$700</mark></p>
+          </div>
+          <a class="button__tertiary agregar-carrito" href="#" role="button" data-id="3">Agregar al carrito</a>
+        </div>
+      </article>
+
+      
+    </div>
+  </section> <!-- Fin sección de la galeria -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="wrapper">
+            <div class="icono facebook">
+                <div class="tooltip">Facebook</div>
+                <span><a target="_blank" href="#"><i
+                            class="fab fa-facebook-f"></i></a></span>
+            </div>
+            <div class="icono instagram">
+                <div class="tooltip">Instragram</div>
+                <span><a target="_blank" href="#"><i
+                            class="fab fa-instagram"></i></a></span>
+            </div>
+            <div class="icono whatsapp">
+                <div class="tooltip">Whatsapp</div>
+                <span><a target="_blank"
+                        href="#"><i
+                            class="fab fa-whatsapp"></i></a></span>
+            </div>
+        </div>
+        <p>Todos los derechos reservados - 2021-Pop Bags</p>
+    </div>
+</footer>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/carrito.js"></script>
+  <script src="../js/toastr.min.js"></script>
+  <script src="../js/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+</body>
+
+</html>

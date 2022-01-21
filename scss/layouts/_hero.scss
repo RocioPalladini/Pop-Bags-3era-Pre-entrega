@@ -1,0 +1,232 @@
+@import '../base/variables';
+@import '../utilities/mixins';
+
+/* --- 
+    HERO
+--- */
+
+%flechaAnimada {
+    position: relative;
+    width: 42%;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+
+    @include sm-min {
+        width: 100%;
+    }
+
+    .animatedColor {
+        color: $accent-color;
+    }
+    
+    .flecha {
+        animation: arrow 1s ease-in-out infinite;
+        font-size: 5rem;
+    }
+    
+    .flecha:hover {
+        animation:arrow 1s ease-out infinite !important;
+        color: $withe;
+    }
+
+    @keyframes arrow {
+        0% {
+            transform: translate(0px, 50px);
+        }
+        50% {
+            transform: translate(0px, 60px);
+        }
+        100% {
+            transform: translate(0px, 50px);
+        }
+    }
+}
+
+%hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+    color: $withe;
+
+    h2 {
+        position: relative;
+        font-size: 3rem;
+        padding: 2rem;
+        font-weight: 500;
+        background: rgba(0,0,0,0.7);
+        text-align: center;
+        letter-spacing: 2px;
+        border-radius: 20px 0;
+
+        @include sm-min {
+            font-size: 2rem;
+        }
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 50%;
+        }
+
+        &::before {
+            left: 0;
+            border-bottom: 6px solid $primary-color;
+        }
+
+        &::after {
+            right: 0;
+            border-top: 6px solid $primary-color;
+        }
+    }
+
+    .elemento {
+        @extend %flechaAnimada;
+    }
+}
+
+%heroTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10vw;
+    color: $withe;
+    
+    div svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include sm-min {
+            display: none;
+        }
+    }
+    
+    h2 {
+        position: relative;
+        width: 45%;
+        font-size: 2.5rem;
+        padding: 2rem;
+        font-weight: 500;
+        background: none;
+        color: $withe;
+        letter-spacing: 1.8px;
+        border-radius: 20px;
+        text-align: left;
+
+        @include sm-min {
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0;
+            color: $primary-color-text;
+        }
+    }
+
+    p {
+        position: relative;
+        width: 42%;
+        padding: 0 2rem;
+
+        @include sm-min {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            color: $primary-color-text;
+        }
+    }
+
+    .elemento {
+        @extend %flechaAnimada;
+        .animatedColor {
+            color: $primary-color;
+            &:hover {
+                color: $withe;
+            }
+        }
+    }
+}
+
+.hero {
+    &__primary, &__secondary {
+        @extend %hero;
+    }
+
+    &__primary {
+        p {
+            position: relative;
+            margin-top: 3rem;
+            color: $accent-color;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
+
+.heroTwo {
+    &__primary, &__secondary {
+        @extend %heroTwo;
+    }
+
+    &__primary {
+        @include sm-min {
+            h2 {
+                color: white;
+                span {
+                    background-color: rgba(0,0,0,0.7);
+                }
+            }
+            
+            p {
+                display: none;
+            }
+        }
+    }
+
+    &__secondary {
+        align-items: flex-end;
+
+        @include sm-min {
+            color: $withe;
+        }
+
+        h2 {
+            text-align: right;
+            @include sm-min {
+                text-align: center;
+                color: $withe;
+                span {
+                    background-color: rgba(0,0,0,0.7);
+                }
+            }
+        }
+
+        
+        p {
+            text-align: right;
+            @include sm-min {
+                display: none;
+            }
+        }
+
+        @include sm-min {
+            .elemento {
+                .animatedColor {
+                    color: $accent-color;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* --- 
+    FIN HERO
+--- */

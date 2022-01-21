@@ -2,22 +2,21 @@
 <html lang="es">
 
 <head>
-    <!-- metas -->
+    <!-- metats -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="nosnippet">
     <meta name="keywords" content="tote bags, decoración, bolso, diseño bolsos, indumentaria">
-    <meta name="description" content="No te quedes con dudas, escribinos y te contestaremos al instante.">
+    <meta name="description" content="Tener tu cuenta te da muchos beneficios, te avisamos cada vez que tengamos nuevos diseños disponibles, nos podes mandar tus propios diseños y muchas cosas mas.">
     <!-- links y scripts -->
-    <link rel="preload" href="../css/main.css as=" styles">
+    <link rel="preload" href="../css/main.css" as="styles">
     <link href="../scss/main.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/aos.css">
     <script src="https://kit.fontawesome.com/10fd8d61f9.js" crossorigin="anonymous"></script>
     <!-- title -->
-    <title>Pop bags: Tienda de bolsas de lienzo</title>
+    <title>Pop Bags</title>
 </head>
-
 <body>
 
     <!-- Menu de navegación -->
@@ -28,12 +27,12 @@
                     <h1>Pop<span>Bags</span></h1>
                 </a>
             </div>
-            <ul class="menu-list menu-list-dark">
+            <ul class="menu-list">
                 <div class="icon cancel-btn">
                     <i class="fas fa-times"></i>
                 </div>
                 <li><a id="index" href="../index.html">Inicio</a></li>
-                <li><a id="productos" href="cuenta.html">Productos</a></li>
+                <li><a id="productos" href="productos.html">Productos</a></li>
                 <li><a id="nuestroTrabajo" href="nuestroTrabajo.html">Nuestro Trabajo</a></li>
                 <li><a id="contacto" href="contacto.html">Contacto</a></li>
                 <li><a id="cuenta" href="cuenta.html">Cuenta</a></li>
@@ -45,16 +44,16 @@
     </nav>
 
     <!-- Hero -->
-    <div class="bg-img-cuatro heroTwo__primary">
+    <div class="bg-img-tres heroTwo__secondary">
         <div style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100vh; width: 100%;">
-                <path d="M300.51,-112.98 C152.69,67.09 262.02,75.98 200.80,150.00 L0.00,150.00 L-1.97,-117.92 Z"
+                <path d="M74.77,-188.97 C152.69,70.06 270.03,70.06 61.23,492.92 L500.00,150.00 L500.00,0.00 Z"
                     style="stroke: none; fill: rgba(63, 82, 52, 0.6);">
                 </path>
             </svg>
         </div>
-        <h2 data-aos="fade-right" data-aos-duration="1000"><span>Las tendencias desaparecen, el estilo es eterno</span></h2>
-        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Ponete en contacto con nosotros y te asesoramos para elegir las mas lindas bolsas personalizadas.</p>
+        <h2 data-aos="fade-right" data-aos-duration="1000"><span>El buen diseño no tiene fecha de caducidad</span></h2>
+        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"><span>Lleva el seguimiento de tus compras creandote una cuenta</span></p>
         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="elemento">
             <a href="#slide"><i class="fas fa-sort-down flecha animatedColor"></i></a>
         </div>
@@ -62,49 +61,59 @@
 
     <div id="slide"></div>
 
-    <!-- Formulario contacto -->
-    <div class="bg-withe">
+    <!-- Formularios -->
+    <div class="bg-withe cuenta__content">
         <div class="tituloH3">
-            <h3 data-aos="fade-up" data-aos-duration="600">Contacto</h3>
+            <h3 data-aos="fade-up" data-aos-duration="600">Cuenta</h3>
         </div>
 
-        <section class="container contacto__content">
-            <div class="row">
-                <div class="contacto col-xs-12 col-lg-6">
-                    <div class="contacto__textos">
-                        <p class="title-md-bold">¡¡¡No te quedes con las dudas, ponete en contacto con nosotros y te
-                            respondemos al instante!!!</p>
-                        <hr>
-                        <div class="contacto__textos-correo">
-                            <i class="far fa-envelope"></i>
-                            <p>contacto@popbags.com</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Sección de formularios -->
+        <section class="container">
 
+            <!-- Formulario para login -->
+            <div class="row">
                 <div class="col-xs-12 col-lg-6">
                     <form class="form" action="">
                         <fieldset class="form__fieldset">
-                            <legend class="form__fieldset-legend">Contactanos</legend>
+                            <legend class="form__fieldset-legend">Acceder</legend>
                             <div class="fields">
                                 <div class="fields__field">
-                                    <label for="nombre">Nombre <span>*</span></label>
-                                    <input type="text" placeholder="Tu nombre" id="nombre" required>
+                                    <label for="usuario">Nombre de usuario o correo electrónico <span>*</span></label>
+                                    <input type="text" placeholder="Tu email" id="usuario" required>
                                 </div>
+
                                 <div class="fields__field">
-                                    <label for="corre">Correo <span>*</span></label>
-                                    <input type="email" placeholder="Tu email" id="correo" required>
-                                </div>
-                                <div class="fields__field">
-                                    <label for="mensaje">Mensaje <span>*</span></label>
-                                    <textarea name="" id="mensaje" cols="30" rows="10"
-                                        placeholder="Dejanos tu mensaje"></textarea>
+                                    <label for="contrasena">Contraseña <span>*</span></label>
+                                    <input type="password" placeholder="Contraseña" id="contrasena" required>
                                 </div>
                             </div>
-                            </fields>
-                            <div class="form__button">
-                                <input class="button__primary" type="submit" value="Enviar">
+                        </fieldset>
+                        <div class="form__button">
+                            <input class="button__primary form__Button--cuenta" type="submit" value="Acceder">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Formulario para registro -->
+                <div class="col-xs-12 col-lg-6">
+                    <form class="form" action="">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__fieldset-legend">Registrarse</legend>
+                            <div class="fields">
+                                <div class="fields__field">
+                                    <label for="correo2">Correo electrónico <span>*</span></label>
+                                    <input type="email" placeholder="Tu email" id="correo2" required>
+                                </div>
+
+                                <div class="fields__field">
+                                    <label for="contrasena2">Contraseña <span>*</span></label>
+                                    <input type="password" placeholder="Contraseña" id="contrasena2" required>
+                                </div>
                             </div>
+                        </fieldset>
+                        <div class="form__button form__Button--cuenta">
+                            <input class="button__primary" type="submit" value="Registrarse">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -140,12 +149,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/slideEffect.js"></script>
-    <script src="../js/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
             once: true,
         });
     </script>
+
 </body>
 
 </html>

@@ -1,0 +1,222 @@
+@import '../base/normalize';
+@import '../base/variables';
+@import '../utilities/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+
+/* --- 
+  MENU DE NAVEAGACIÓN
+--- */
+
+//Principal
+.navbar {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+
+  .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+//Sticky
+.navbar.sticky {
+  padding: 10px 0;
+  background: $primary-color-text;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+
+  .logo a {
+    span {
+      color: $withe;
+    }
+  }
+
+  .menu-list li a {
+    color: $withe;
+    @include sm-min {
+      color: $accent-color;
+    }
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  #main ul li.active a { 
+    font-weight: 800;
+    color: $primary-color;
+  }
+}
+
+//Logo
+.navbar .logo a {
+  text-decoration: none;
+  h1 {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    font-family: 'Dawning of a New Day', cursive;
+    color: #82b66f;
+    font-size: 4.2rem;
+    letter-spacing: 6px;
+    margin: auto 0;
+
+    span {
+      color: $primary-color-text;
+      font-weight: 300;
+      font-size: 3rem;
+    }
+  }
+}
+
+//Lista
+.navbar .menu-list {
+  display: inline-flex;
+  li {
+    list-style: none;
+
+    a {
+      color: $accent-color;
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 1.2rem;
+      margin-right: 1.2rem;
+      text-decoration: none;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 50% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .3s;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $primary-color-text;  
+        background-size: 100% 2px; 
+      }
+    }
+  }
+}
+
+#main ul li.active { 
+  font-weight: 800;
+  //border-bottom: 2px solid #88b2ff;
+}
+
+#main ul li.active a { 
+  font-weight: 800;
+  color: $primary-color-text;
+}
+
+//Iconos
+.icon {
+  color: $primary-color-text;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.icon.cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.navbar.sticky .icon.cancel-btn {
+  top: 10px;
+}
+
+//Media queries
+@include xs-max {
+  .navbar .logo a {
+    h1 {
+      color: red;
+      font-size: 3.8rem;
+      letter-spacing: 2px;
+        span {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 281px) {
+  .navbar .logo a {
+  
+    h1 {
+      font-size: 3rem;
+        span {
+        font-size: 2rem;
+      }
+    }
+  }
+} 
+
+@media (max-width: 868px) {
+  body.disabledScroll {
+    overflow: hidden;
+  }
+
+  .icon {
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 9;
+  }
+
+  .icon.cancel-btn {
+    display: none;
+  }
+
+  .icon.cancel-btn.show {
+    display: block;
+  }
+
+  .icon.hide {
+    display: none;
+  }
+
+  .navbar .menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: $primary-color;//#222;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+  }
+
+  .navbar.sticky .menu-list {
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+
+  .navbar .menu-list.active {
+    clip-path: circle(75%);
+  }
+
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+
+  .navbar .menu-list li a {
+    font-size: 23px;
+    color: $accent-color;
+    &:hover {
+      color: $primary-color-text;
+    } 
+  }
+
+}
+
+/* --- 
+  FIN MENU DE NAVEAGACIÓN
+--- */
